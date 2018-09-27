@@ -1,0 +1,8 @@
+html, body {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  background-color: royalblue;
+  width: 100%;
+  height: 100%; }
