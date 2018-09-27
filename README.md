@@ -1,4 +1,4 @@
-### Simple example of FlexBox
+### Simple example about FlexBox
 
 ##### Explanation about all properties && display:flex
 
