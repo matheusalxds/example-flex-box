@@ -2,12 +2,12 @@
 
 ##### Explanation about all properties && display:flex
 
-* flex-direction
-* flex-wrap
-* justify-content
 * align-content
 * align-items
-* order
+* flex-direction
+* flex-wrap
 * flex-shrink
 * flex-grow
 * flex-basis
+* justify-content
+* order
