@@ -1,3 +1,7 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
 // Just will be apply in parent component
 .container {
   border: 5px solid black;
@@ -21,6 +25,19 @@
     justify-content: space-around;
   }
 
+  &__align-items {
+    // align-items: stretch ( default ) / flex-start / flex-end
+    // center / baseline
+    align-items: center;
+  }
+
+  &__height {
+    height: 300px;
+  }
+
+  &__wrapper {
+    padding: 5rem;
+  }
 }
 
 .box {
