@@ -1,6 +1,7 @@
 .container {
   border: 5px solid black;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 
 .box {
   padding: 30px;

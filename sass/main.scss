@@ -1,6 +1,10 @@
+// Just will be apply in parent component
 .container {
   border: 5px solid black;
   display: flex;
+  // flex-direction:  row (default) / column / column-reverse / row-reverse
+  flex-direction: column;
+
 }
 
 .box {
