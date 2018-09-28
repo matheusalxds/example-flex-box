@@ -2,8 +2,24 @@
 .container {
   border: 5px solid black;
   display: flex;
-  // flex-direction:  row (default) / column / column-reverse / row-reverse
-  flex-direction: column;
+
+  &__direction {
+    // flex-direction:  row (default) / column / column-reverse / row-reverse
+    //flex-direction: column;
+    flex-direction: column;
+  }
+
+  &__wrap {
+    // flex-wrap: no-wrap (default) / wrap / wrap-reverse
+    //flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+  }
+
+  &__justify-content {
+    // justify-content: flex-start ( default ) / flex-end /
+    // center / space-between / space-around
+    justify-content: space-around;
+  }
 
 }
 
@@ -31,5 +47,9 @@
 
   &--5 {
     background-color: #51CB20;
+  }
+
+  &--generic {
+    background-color: #202C59;
   }
 }
