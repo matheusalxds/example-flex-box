@@ -78,7 +78,13 @@ html, body, * {
     }
   }
 
+  &__shrink {
+    //  force to use the width/height that you applied
+    //  flex-shrink: 1; (default)
+    flex-shrink: 0;
+    width: 300px;
 
+  }
 
   &__height {
     height: 300px;
@@ -94,6 +100,23 @@ html, body, * {
   text-align: center;
   font-size: 35px;
   color: white;
+
+  &--shrink {
+    //  force to use the width/height that you applied
+    //  flex-shrink: 1; (default)
+    //  the content will shrink, but if you set to 0
+    //  will force to not shrink
+    //  so the value will keeps the same
+    flex-shrink: 0;
+    width: 300px;
+  }
+
+  &--basis {
+    //  basis will set a value for each element of the
+    //  content
+    //  flex-basis: auto (default)
+    flex-basis: 100px;
+  }
 
   &--1 {
     background-color: #581F18;
@@ -153,6 +176,37 @@ html, body, * {
 
   &--generic {
     background-color: #202C59;
+  }
+}
+
+.box3 {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  //  flex-grow: 1; // if you have space, fill/grow it
+  //  flex-basis: 150px;
+  //  flex: grow shrink basis
+  flex: 1 1 150px;
+
+  &--1 {
+    background-color: #581F18;
+  }
+
+  &--2 {
+    background-color: #F0A202;
+  }
+
+  &--3 {
+    background-color: #D95D39;
+  }
+
+  &--4 {
+    background-color: #202C59;
+  }
+
+  &--5 {
+    background-color: #51CB20;
   }
 }
 
