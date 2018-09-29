@@ -25,6 +25,14 @@ html, body, * {
     align-items: center; }
   .container__align-content {
     align-content: center; }
+  .container__align-self--center {
+    align-self: center; }
+  .container__align-self--start {
+    align-self: flex-start; }
+  .container__align-self--end {
+    align-self: flex-end; }
+  .container__align-self--stretch {
+    align-self: stretch; }
   .container__height {
     height: 300px; }
   .container__wrapper {
@@ -36,7 +44,8 @@ html, body, * {
   font-size: 35px;
   color: white; }
   .box--1 {
-    background-color: #581F18; }
+    background-color: #581F18;
+    order: 1; }
   .box--2 {
     background-color: #F0A202; }
   .box--3 {
@@ -44,8 +53,30 @@ html, body, * {
   .box--4 {
     background-color: #202C59; }
   .box--5 {
-    background-color: #51CB20; }
+    background-color: #51CB20;
+    order: -1; }
   .box--generic {
+    background-color: #202C59; }
+
+.box2 {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  flex-grow: 1; }
+  .box2--1 {
+    background-color: #581F18;
+    flex-grow: 0; }
+  .box2--2 {
+    background-color: #F0A202; }
+  .box2--3 {
+    background-color: #D95D39;
+    flex-grow: 3; }
+  .box2--4 {
+    background-color: #202C59; }
+  .box2--5 {
+    background-color: #51CB20; }
+  .box2--generic {
     background-color: #202C59; }
 
 .section__flexbox {
