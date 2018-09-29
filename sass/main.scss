@@ -4,9 +4,24 @@ html, body, * {
 }
 
 // Just will be apply in parent component
+// Main axis = X
+// Cross axis = Y
+
+.container, .container2 {
+  display: flex;
+}
+
+.container2 {
+  border: 5px solid royalblue;
+  flex-direction: column;
+
+  &__height {
+    height: 600px;
+  }
+}
+
 .container {
   border: 5px solid black;
-  display: flex;
 
   &__direction {
     // flex-direction:  row (default) / column / column-reverse / row-reverse
@@ -24,12 +39,22 @@ html, body, * {
     // justify-content: flex-start ( default ) / flex-end /
     // center / space-between / space-around
     justify-content: space-around;
+
+    &--center {
+      justify-content: center;
+    }
   }
 
   &__align-items {
     // align-items: stretch ( default ) / flex-start / flex-end
     // center / baseline
     align-items: center;
+  }
+
+  &__align-content {
+    // align-content: stretch ( default ) / flex-start
+    // flex-end / center / space-between / space-around
+    align-content: center
   }
 
   &__height {
@@ -73,9 +98,10 @@ html, body, * {
 }
 
 .section {
-  &__intro {
+  &__flexbox {
     background-color: rgba(0, 0, 0, 0.1);
   }
+
   &__banner {
     background-color: rgba(0, 0, 0, 0.2);
   }
